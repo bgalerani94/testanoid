@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Levels
+  m_EditorClassIdentifier: 
+  m_GroupName: Levels
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ce1b89ad83283e14bb0d4d70a8b461bd
+  m_SerializeEntries:
+  - m_GUID: 7cca20eeeb699674cbe868afc73fad38
+    m_Address: Assets/Levels/Level1.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f8cf69504020115478fa1af0dfd4b4b2
+    m_Address: Assets/Levels/Level2.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d88506269e346764a8bab2e504ce854e
+    m_Address: Assets/Levels/Level3.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 96fe1bf4ad59f4745a2ac63e42064bfe
+    m_Address: Assets/Levels/Level4.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93f80370cea5eae4a8473778dbad7393
+    m_Address: Assets/Levels/Level5.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 22901fde87204e44782db8cd76d6af3c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4c1c7c74ce99be847bc80254acf0a48d, type: 2}
+    - {fileID: 11400000, guid: d57b9791acb961d4d87184081970d46d, type: 2}

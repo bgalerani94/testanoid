@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SCORE
-  - LIVES
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -13,8 +12,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - BouncyWall
   - 
   - 
   - 
@@ -42,4 +41,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Walls
+    uniqueID: 1631751173
+    locked: 0
+  - name: Background
+    uniqueID: 3080370345
+    locked: 0
+  - name: GameplayContent
+    uniqueID: 561114333
     locked: 0

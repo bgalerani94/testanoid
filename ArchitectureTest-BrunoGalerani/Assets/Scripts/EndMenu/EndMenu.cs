@@ -11,7 +11,6 @@ namespace EndMenu
         [Header("Assignments")] [SerializeField]
         private TMP_Text scoreLabel;
 
-        [SerializeField] private Button linkedInButton;
         [SerializeField] private Button playAgainButton;
 
         private AppController _appController;
@@ -24,13 +23,7 @@ namespace EndMenu
 
             scoreLabel.text = $"Score: {_appController.GameData.Score}";
 
-            linkedInButton.onClick.AddListener(OnLinkedInClicked);
             playAgainButton.onClick.AddListener(OnPlayAgainClicked);
-        }
-
-        private static void OnLinkedInClicked()
-        {
-            Application.OpenURL("https://www.linkedin.com/in/brunogalerani/");
         }
 
         private void OnPlayAgainClicked()

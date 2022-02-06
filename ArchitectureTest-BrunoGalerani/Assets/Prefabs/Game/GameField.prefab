@@ -598,7 +598,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
     type: 3}
-  m_Color: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
+  m_Color: {r: 0.09411766, g: 0.08627451, b: 0.09019608, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -810,7 +810,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
     type: 3}
-  m_Color: {r: 0.32549024, g: 0.6850731, b: 1, a: 1}
+  m_Color: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1161,7 +1161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.24705882}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1367,6 +1367,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4421547457167510}
     m_Modifications:
+    - target: {fileID: 1314003094, guid: 93282317b771f4f9ca62e0b8ee4fc80e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314003094, guid: 93282317b771f4f9ca62e0b8ee4fc80e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314003094, guid: 93282317b771f4f9ca62e0b8ee4fc80e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1779093947323320, guid: 93282317b771f4f9ca62e0b8ee4fc80e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1491,6 +1503,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4421547457167510}
     m_Modifications:
+    - target: {fileID: 1109724260, guid: ba126b536cd254f439e8b83616958865, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109724260, guid: ba126b536cd254f439e8b83616958865, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109724260, guid: ba126b536cd254f439e8b83616958865, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1122340180306448, guid: ba126b536cd254f439e8b83616958865, type: 3}
       propertyPath: m_Name
       value: Ball

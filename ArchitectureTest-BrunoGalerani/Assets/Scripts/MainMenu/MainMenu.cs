@@ -1,8 +1,8 @@
-﻿using System;
-using Singletons;
+﻿using Singletons;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Utils;
 
 namespace MainMenu
 {
@@ -11,13 +11,11 @@ namespace MainMenu
         [SerializeField] private TMP_Text titleLabel;
         [SerializeField] private Button playButton;
 
-        private void Awake()
+        private void Start()
         {
             titleLabel.text = Application.productName;
             playButton.onClick.AddListener(() =>
-            {
-                Transition.Instance.LoadScene("GamePlay");
-            });
+                SingletonComponent<Transition>.Instance.LoadScene(Constants.GameScene));
         }
     }
 }

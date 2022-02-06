@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Singletons
 {
-    public class AppController : SingletonComponent<AppController>, IAppController
+    public class AppController : MonoBehaviour, IAppController
     {
         [SerializeField] private uint livesAmount;
 
@@ -28,7 +28,7 @@ namespace Singletons
             CurrentLevel++;
         }
 
-        public void OnGameReset()
+        public void ResetGame()
         {
             GameData = new GameData(livesAmount);
             CurrentLevel = 0;

@@ -22,7 +22,8 @@ namespace Game
 
         private void Start()
         {
-            _gameController = new GameController(AppController.Instance, Transition.Instance,
+            _gameController = new GameController(SingletonComponent<AppController>.Instance,
+                SingletonComponent<Transition>.Instance,
                 levelLoader.LevelsAmount);
 
             _gameController.Bind(this);
@@ -41,7 +42,7 @@ namespace Game
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                Transition.Instance.LoadScene("GamePlay");
+                _gameController.OnDebugResetPressed();
             }
 
             #endregion

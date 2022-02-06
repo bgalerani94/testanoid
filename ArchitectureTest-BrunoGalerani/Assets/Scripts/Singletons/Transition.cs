@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 namespace Singletons
 {
     [RequireComponent(typeof(Animator))]
-    public class Transition : SingletonComponent<Transition>, ITransition
+    public class Transition : MonoBehaviour, ITransition
     {
         private static readonly int Show = Animator.StringToHash("Show");
 

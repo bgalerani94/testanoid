@@ -32,7 +32,7 @@ namespace Game
 
         private void Start()
         {
-            SetTutorialText(AppController.Instance.IsMobile()
+            SetTutorialText(SingletonComponent<AppController>.Instance.IsMobile()
                 ? mobileTutorialText
                 : desktopTutorialText);
         }

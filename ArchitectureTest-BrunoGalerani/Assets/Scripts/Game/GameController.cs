@@ -1,6 +1,7 @@
 using Level;
 using Singletons;
 using UnityEngine;
+using Utils;
 
 namespace Game
 {
@@ -55,7 +56,7 @@ namespace Game
         public void OnLevelFailure()
         {
             Debug.LogError("There was a problem while loading the level. Going back to main scene");
-            _transition.LoadScene("Main");
+            _transition.LoadScene(Constants.MenuScene);
         }
 
         public void OnDeath()
@@ -71,10 +72,13 @@ namespace Game
             else
             {
                 _view.ShowBall(false);
-                _appController.OnGameReset();
-                // Transition.Instance.LoadScene("Lose");
-                Transition.Instance.LoadScene("Main");
+                _transition.LoadScene(Constants.EndScene);
             }
+        }
+
+        public void OnDebugResetPressed()
+        {
+            _transition.LoadScene(Constants.GameScene);
         }
 
         private void OnBrickDestroyed()
@@ -86,16 +90,9 @@ namespace Game
             {
                 _view.ShowBall(false);
                 _appController.OnLevelCompleted();
-                if (_appController.CurrentLevel >= _levelsAmount)
-                {
-                    _appController.OnGameReset();
-                    // Transition.Instance.LoadScene("Win");
-                    Transition.Instance.LoadScene("Main");
-                }
-                else
-                {
-                    Transition.Instance.LoadScene("GamePlay");
-                }
+                _transition.LoadScene(_appController.CurrentLevel >= _levelsAmount
+                    ? Constants.EndScene
+                    : Constants.GameScene);
             }
         }
 

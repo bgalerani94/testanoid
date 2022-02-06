@@ -1,7 +1,6 @@
 using JetBrains.Annotations;
 using Singletons;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Game
 {
@@ -17,15 +16,17 @@ namespace Game
         private Rigidbody2D _rigidbody2D;
         private bool _isPressingLeft;
         private bool _isPressingRight;
+        private bool _isMobile;
 
-        private void Awake()
+        private void Start()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
+            _isMobile = SingletonComponent<AppController>.Instance.IsMobile();
         }
 
         private void Update()
         {
-            if (!AppController.Instance.IsMobile())
+            if (!_isMobile)
             {
                 var horizontal = Input.GetAxisRaw("Horizontal");
                 _isPressingLeft = Mathf.Approximately(horizontal, -1);

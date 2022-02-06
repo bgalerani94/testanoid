@@ -8,6 +8,6 @@ namespace Singletons
         int CurrentLevel { get; }
         bool IsMobile();
         void OnLevelCompleted();
-        void OnGameReset();
+        void ResetGame();
     }
 }

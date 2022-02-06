@@ -1,6 +1,6 @@
-#Architecture Test by Bruno Galerani
+# Architecture Test by Bruno Galerani
 
-##Summary of requested requirements
+## Summary of requested requirements
 - Kiss principle
 	* The points will be listed here
 - Decoupling data and representation
@@ -12,7 +12,7 @@
 - Application of design patterns where possible
 	- The points will be listed here
 
-##Important Notes
+## Important Notes
 - The ball's direction changes according to the point that it has hit the player. This was done in order to follow the classic Arkanoid behavior.
 - About the Player movement:
 	* If the user is using a Mobile device to play the game, they can control the player by clicking at the desired side of the screen.
@@ -21,5 +21,5 @@
 - Created some Extensions methods that could be useful.
 - The Array2DEditor package was used in order to improve the level creator visual in the Editor.
 
-##Unity Version
+## Unity Version
 The Unity Editor version was upgraded to the latest LTS available by February 4th (2020.3.27f1) so we can use newer features and also guarantee a better stability.
